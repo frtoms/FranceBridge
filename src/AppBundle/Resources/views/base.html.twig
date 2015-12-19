@@ -2,7 +2,7 @@
 
 {% block baseBody %}
     <header>
-        <nav class="navbar navbar-inverse">
+        <nav class="navbar navbar-inverse no-margin">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar-collapse">
@@ -45,12 +45,20 @@
                 </div>
             </div>
         </nav>
-        <div class="container-fluid">
-            Hello
+        <div class="Brand container-fluid">
+            <div class="text-right col-sm-4 col-md-3">
+                <img class="Brand__img img-responsive"
+                     src="{{ asset('bundles/app/img/Bridge.JPG') }}">
+            </div>
+            <div class="Brand__title col-sm-5 col-md-6">
+                France Bridge
+            </div>
+            <div class="text-left col-sm-3">
+                <img class="Brand__img img-responsive"
+                     src="{{ asset('bundles/app/img/PhilippeSoulet.JPG') }}">
+            </div>
         </div>
     </header>
 
-    <div class="container">
         {% block body %}{% endblock %}
-    </div>
 {% endblock %}

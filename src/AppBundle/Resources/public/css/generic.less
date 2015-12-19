@@ -1,0 +1,32 @@
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.box-uncolored {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    padding: 15px 15px;
+}
+
+.box {
+    .box-uncolored;
+    background: rgba(255, 255, 255, 0.5);
+
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}

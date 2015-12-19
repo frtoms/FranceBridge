@@ -20,6 +20,7 @@
         "sensio/framework-extra-bundle": "3.0.*",
         "incenteev/composer-parameter-handler": "2.1.*",
         "braincrafted/bootstrap-bundle": "2.1.*",
+        "bmatzner/fontawesome-bundle": "4.4.*",
         "twbs/bootstrap": "3.3.*",
         "jquery/jquery":  "2.1.*",
         "oyejorge/less.php": "1.7.*"

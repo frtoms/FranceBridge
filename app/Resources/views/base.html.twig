@@ -5,8 +5,9 @@
         <title>{% block title %}France Bridge{% endblock %}</title>
 
         {% stylesheets output='css/all.css' filter='yui_css, cssrewrite'
+            'bundles/bmatznerfontawesome/css/font-awesome.min.css'
             'css/bootstrap.css'
-            '@AppBundle/Resources/public/css/*.less'
+            '@AppBundle/Resources/public/css/style.less'
         %}
             <link href="{{ asset_url }}" rel="stylesheet">
         {% endstylesheets %}
