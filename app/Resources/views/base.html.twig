@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>{% block title %}France Bridge{% endblock %}</title>
+
+        {% stylesheets output='css/all.css' filter='?yui_css, cssrewrite'
+            'css/bootstrap.css'
+            '@AppBundle/Resources/public/css/*.css'
+            '@AppBundle/Resources/public/css/*.less'
+        %}
+        <link href="{{ asset_url }}" rel="stylesheet">
+        {% endstylesheets %}
+
+        {% block stylesheets %}{% endblock %}
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body>
+        {% block baseBody %}{% endblock %}
+
+        {% javascripts output='js/all.js' filter='?yui_js'
+            'js/jquery.js'
+            'js/bootstrap.js'
+        %}
+        <script src="{{ asset_url }}"></script>
+        {% endjavascripts %}
+
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

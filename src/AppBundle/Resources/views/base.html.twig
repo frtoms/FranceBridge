@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block baseBody %}
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="{{ path('homepage') }}">Accueil</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <img src="{{ asset('bundles/app/img/PhilippeSoulet.JPG') }}"
+                 alt="Philippe Soulet">
+        </div>
+    </header>
+
+    <div class="container">
+        {% block body %}{% endblock %}
+    </div>
+{% endblock %}
