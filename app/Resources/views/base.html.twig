@@ -4,12 +4,11 @@
         <meta charset="UTF-8" />
         <title>{% block title %}France Bridge{% endblock %}</title>
 
-        {% stylesheets output='css/all.css' filter='?yui_css, cssrewrite'
+        {% stylesheets output='css/all.css' filter='yui_css, cssrewrite'
             'css/bootstrap.css'
-            '@AppBundle/Resources/public/css/*.css'
             '@AppBundle/Resources/public/css/*.less'
         %}
-        <link href="{{ asset_url }}" rel="stylesheet">
+            <link href="{{ asset_url }}" rel="stylesheet">
         {% endstylesheets %}
 
         {% block stylesheets %}{% endblock %}
@@ -23,7 +22,7 @@
             'js/jquery.js'
             'js/bootstrap.js'
         %}
-        <script src="{{ asset_url }}"></script>
+            <script src="{{ asset_url }}"></script>
         {% endjavascripts %}
 
         {% block javascripts %}{% endblock %}
